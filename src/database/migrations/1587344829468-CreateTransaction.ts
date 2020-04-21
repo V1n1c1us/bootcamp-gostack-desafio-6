@@ -21,18 +21,22 @@ export default class CreateTransaction1587344829468
           },
           {
             name: 'title',
-            type: 'float',
-            isNullable: false,
+            type: 'varchar',
+          },
+          {
+            name: 'value',
+            type: 'decimal',
+            precision: 10,
+            scale: 2,
           },
           {
             name: 'type',
             type: 'varchar',
-            isNullable: false,
           },
           {
             name: 'category_id',
             type: 'uuid',
-            isNullable: false,
+            isNullable: true,
           },
           {
             name: 'created_at',
